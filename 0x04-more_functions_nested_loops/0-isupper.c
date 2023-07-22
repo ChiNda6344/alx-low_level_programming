@@ -14,8 +14,6 @@ int _isupper(int c)
 	}
 	else
 	{
-		putchar("%c: %d\n", c, _isupper(c));
 		return (0);
 	}
 }
-
