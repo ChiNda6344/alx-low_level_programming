@@ -1,7 +1,8 @@
 #include "main.h"
 
 /**
- * print_most_numbers - function checks for checks a digit (0 through 9)
+ * print_most_numbers - function checks for checks for a digit (0 through 9)
+ * @b: - var
  * Return: 0 (success)
  */
 
@@ -15,7 +16,7 @@ void print_most_numbers(void)
 		{
 			if (b != 52)
 			{
-				_putchar(c);
+				_putchar(b);
 			}
 		}
 	}
