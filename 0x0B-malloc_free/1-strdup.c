@@ -3,28 +3,28 @@
 #include <stdlib.h>
 
 /**
- * _strdup - duplicate to new memory location
- * @str: char
- * Return: 0
+ * _strdup - copies string to newly allocated space in memory
+ * @str: string to copy to new memory
+ * Return: pointer to new memory
  */
 
 char *_strdup(char *str)
 {
-	char aaa;
+	char *abc;
 	int i, r = 0;
 
 	if (str == NULL)
 		return (NULL);
 	i = 0;
-	while (str[i], i != '\0')
+	while (str[i]; i != '\0')
 		i++;
 
-	aaa = malloc(sizeof(char) * (i + 1));
+	abc = malloc(sizeof(char) * (i + 1));
 
-	if (aaa == NULL)
+	if (abc == NULL)
 		return (NULL);
 
-	for (r = 0; str[r]; r++)
-		aaa[r] = str[r];
-	return (aaa);
+	for (r = 0; str[r] != '\0'; r++)
+		abc[r] = str[r];
+	return (abc);
 }
